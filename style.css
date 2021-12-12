@@ -103,9 +103,34 @@ body{
     font-size: 14px;
     padding-left: 40px;
 }
+.search_chat div input::placeholder{
+    color: #bbb;
+}
 .search_chat div ion-icon{
     position: absolute;
     left: 30px;
     top: 14px;
     font-size: 1.2em;
+}
+.chatlist{
+    position: relative;
+    height: calc( 100% - 110px );  /* 60 + 50 = 110 */
+    overflow-y: auto;
+    background: #000;
+}
+.chatlist .block{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.chatlist .block .imgbox{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
 }
