@@ -40,7 +40,7 @@ body{
     width: 100%;
     height: 100%;
     background:url(./image/pattern.jpg);
-    opacity: 0.06;
+    opacity: 0.1;
 }
 .header{
     position: relative;
@@ -66,4 +66,46 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.nav_icons{
+    display: flex;
+}
+.nav_icons li{
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+.search_chat{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.search_chat div{
+    width: 100%;
+}
+.search_chat div input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-radius: 30px;
+    padding: 6px;
+    height: 38px;
+    font-size: 14px;
+    padding-left: 40px;
+}
+.search_chat div ion-icon{
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    font-size: 1.2em;
 }
