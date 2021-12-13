@@ -128,7 +128,7 @@ body{
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     cursor: pointer;
 }
-.chatlist .block .active{
+.chatlist .block.active{
     background: #ebebeb;
 }
 .chatlist .block:hover{
@@ -161,6 +161,12 @@ body{
     font-size: 0.75em;
     color: #aaa;
 }
+.chatlist .block.active .details .listHead .time{
+    color: #111;
+}
+.chatlist .block.unread .details .listHead .time{
+    color: #06d755;
+}
 .message_p{
     display: flex;
     justify-content: space-between;
@@ -185,4 +191,19 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 0.75em;
+}
+.imgtext{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgtext h4{
+    font-weight: 500;
+    font-size: 1em;
+    margin-left: 15px;
+}
+.imgtext h4 span{
+    font-size: 0.8em;
+    color: #555;
 }
