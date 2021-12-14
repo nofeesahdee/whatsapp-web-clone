@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-body{
+body
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,8 @@ body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(#009688 0%, #009688 130px,#d9dbd5 130px,#d9dbd5 100%);
 }
-.container{
+.container
+{
     position: relative;
     display: flex;
     width: 1300px;
@@ -22,19 +25,22 @@ body{
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.06);
 }
-.container .leftSide{
+.container .leftSide
+{
     position: relative;
     flex: 30%;
     background: #fff;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-.container .rightSide{
+.container .rightSide
+{
     position: relative;
     flex: 70%;
     background:#e5ddd5;
   
 }
-.container .rightSide::before{
+.container .rightSide::before
+{
     content: '';
     position:absolute;
     top: 0;
@@ -44,7 +50,8 @@ body{
     background:url(./image/pattern.jpg);
     opacity: 0.06;
 }
-.header{
+.header
+{
     position: relative;
     width: 100%;
     height: 60px;
@@ -54,14 +61,16 @@ body{
     align-items: center;
     padding: 0 15px;
 }
-.userimg{
+.userimg
+{
     position: relative;
     width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%;
 }
-.cover{
+.cover
+{
     position:absolute;
     top: 0;
     left: 0;
@@ -69,10 +78,12 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.nav_icons{
+.nav_icons
+{
     display: flex;
 }
-.nav_icons li{
+.nav_icons li
+{
     list-style: none;
     cursor: pointer;
     color: #51585c;
@@ -81,7 +92,8 @@ body{
     align-items: center;
     margin-left: 25px;
 }
-.search_chat{
+.search_chat
+{
     position: relative;
     width: 100%;
     height: 50px;
@@ -91,10 +103,12 @@ body{
     align-items: center;
     padding: 0 15px;
 }
-.search_chat div{
+.search_chat div
+{
     width: 100%;
 }
-.search_chat div input{
+.search_chat div input
+{
     width: 100%;
     outline: none;
     border: none;
@@ -105,21 +119,25 @@ body{
     font-size: 14px;
     padding-left: 40px;
 }
-.search_chat div input::placeholder{
+.search_chat div input::placeholder
+{
     color: #bbb;
 }
-.search_chat div ion-icon{
+.search_chat div ion-icon
+{
     position: absolute;
     left: 30px;
     top: 14px;
     font-size: 1.2em;
 }
-.chatlist{
+.chatlist
+{
     position: relative;
     height: calc( 100% - 110px );  /* 60 + 50 = 110 */
     overflow-y: auto;
 }
-.chatlist .block{
+.chatlist .block
+{
     position: relative;
     width: 100%;
     display: flex;
@@ -128,13 +146,16 @@ body{
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     cursor: pointer;
 }
-.chatlist .block.active{
+.chatlist .block.active
+{
     background: #ebebeb;
 }
-.chatlist .block:hover{
+.chatlist .block:hover
+{
     background: #f5f5f5;
 }
-.chatlist .block .imgbox{
+.chatlist .block .imgbox
+{
     position: relative;
     min-width: 45px;
     height: 45px;
@@ -142,37 +163,45 @@ body{
     border-radius: 50%;
     margin-right: 10px;
 }
-.chatlist .block .details{
+.chatlist .block .details
+{
     position: relative;
     width: 100%;
 }
-.chatlist .block .details .listHead{
+.chatlist .block .details .listHead
+{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
-.chatlist .block .details .listHead h4{
+.chatlist .block .details .listHead h4
+{
     font-size: 1.1em;
     font-weight: 600;
     color: #111;
     font-family: inherit;
 }
-.chatlist .block .details .listHead .time{
+.chatlist .block .details .listHead .time
+{
     font-size: 0.75em;
     color: #aaa;
 }
-.chatlist .block.active .details .listHead .time{
+.chatlist .block.active .details .listHead .time
+{
     color: #111;
 }
-.chatlist .block.unread .details .listHead .time{
+.chatlist .block.unread .details .listHead .time
+{
     color: #06d755;
 }
-.message_p{
+.message_p
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.message_p p{
+.message_p p
+{
     color: #aaa;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -181,7 +210,8 @@ body{
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
-.message_p b{
+.message_p b
+{
     background: #06d755;
     color:#fff ;
     min-width: 20px;
@@ -192,35 +222,41 @@ body{
     align-items: center;
     font-size: 0.75em;
 }
-.imgtext{
+.imgtext
+{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.imgtext h4{
+.imgtext h4
+{
     font-weight: 500;
     font-size: 1em;
     margin-left: 15px;
 }
-.imgtext h4 span{
+.imgtext h4 span
+{
     font-size: 0.8em;
     color: #555;
 }
-.chatbox{
+.chatbox
+{
     position: relative;
     width: 100%;
     height: calc(100% - 120px);
     padding: 50px;
     overflow-y: auto;
 }
-.message{
+.message
+{
     position: relative;
     display: flex;
     margin: 5px 0;
     width: 100%;
 }
-.message p{
+.message p
+{
     position: relative;
     right: 0;
     text-align: right;
@@ -230,7 +266,8 @@ body{
     border-radius: 10px;
     font-size: 0.9em;
 }
-.message p::before{
+.message p::before
+{
     content: '';
     position: absolute;
     top: 0;
@@ -239,9 +276,65 @@ body{
     height: 20px;
     background: linear-gradient(135deg, #dcf8c6 0%,#dcf8c6 50%, transparent 50%,transparent);
 }
-.message p span{
+.message p span
+{
     display: block;
     margin-top: 5px;
     font-size: 0.85em;
     opacity: 0.5;
+}
+.my_message
+{
+    justify-content: flex-end;
+}
+.friend_message
+{
+    justify-content: flex-start;
+}
+.friend_message p
+{
+   background: #fff;
+   text-align: left;
+}
+.friend_message p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, #fff 0%,#fff 50%, transparent 50%,transparent);
+}
+.chatbox_input
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatbox_input ion-icon
+{
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #51585c;
+}
+.chatbox_input ion-icon:nth-child(1)
+{
+    margin-right: 15px;
+}
+.chatbox_input input
+{
+    position: relative;
+    width: 90%;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
 }
